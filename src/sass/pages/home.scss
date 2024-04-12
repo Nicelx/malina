@@ -1,0 +1,35 @@
+@import "../variables";
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.box {
+	height: 812px;
+	width: 968px;
+	background-color: $color-white;
+	box-shadow: 0 10px 60px 0 rgba($color-gray, 0.5);
+	border-radius: 30px;
+	padding: 44px 0 40px;
+}
+.header {
+	padding: 0 44px 0 38px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 47px;
+}
+input,
+select {
+	height: 38px;
+	border-radius: 10px;
+	border: none;
+	background-color: $color-gray-2;
+	outline: none;
+	transition: all 0.4s;
+}
+input:focus,
+select:focus {
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+}
