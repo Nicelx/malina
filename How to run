@@ -1,3 +1,6 @@
+npm i
+
+
 *dev mode*
 npm run start 
 *build*

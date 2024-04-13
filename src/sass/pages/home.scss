@@ -1,5 +1,22 @@
 @import "../variables";
 
+input,
+select {
+	height: 38px;
+	border-radius: 10px;
+	border: none;
+	background-color: $color-gray-2;
+	outline: none;
+	transition: all 0.4s;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+}
+input:focus,
+select:focus {
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .wrapper {
 	display: flex;
 	justify-content: center;
@@ -19,17 +36,41 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 47px;
-}
-input,
-select {
-	height: 38px;
-	border-radius: 10px;
-	border: none;
-	background-color: $color-gray-2;
-	outline: none;
-	transition: all 0.4s;
-}
-input:focus,
-select:focus {
-	outline: 1px solid rgba(0, 0, 0, 0.2);
+
+	&__controls {
+		display: flex;
+		gap: 16px;
+	}
+	&__search {
+		width: 216px;
+		padding: 10px 10px 10px 40px;
+		color: $color-gray-text;
+	}
+	&__search-wrapper {
+		position: relative;
+	}
+	&__search-wrapper::after {
+		content: "";
+		background: url("../assets/svg/search.svg");
+		position: absolute;
+		left: 9px;
+		top: 6px;
+		width: 24px;
+		height: 24px;
+	}
+	&__select-wrapper {
+		position: relative;
+	}
+	&__select-wrapper::after {
+		content: "sort by:";
+		position: absolute;
+		top: 9px;
+		left: 10px;
+	}
+	&__select {
+		padding: 10px 10px 10px 70px;
+		width: 154px;
+		position: relative;
+		// color: $color-gray-select;
+	}
 }
