@@ -1,0 +1,19 @@
+.status {
+	color: $color-active;
+	background-color: rgba($color-active, 0.38);
+	border: 1px solid $color-active;
+
+	&_inactive {
+		background-color: rgba($color-inactive, 0.38);
+		border: 1px solid $color-inactive;
+		color: $color-inactive;
+	}
+}
+.status,
+.status_inactive {
+	text-align: center;
+	width: 80px;
+	height: 29px;
+	padding: 4px 12px 4px 12px;
+	border-radius: 4px;
+}

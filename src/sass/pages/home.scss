@@ -37,6 +37,10 @@ select:focus {
 	justify-content: space-between;
 	margin-bottom: 47px;
 
+	&__title {
+		margin-top: 7px;
+		letter-spacing: 0.5px;
+	}
 	&__controls {
 		display: flex;
 		gap: 16px;
@@ -62,15 +66,94 @@ select:focus {
 		position: relative;
 	}
 	&__select-wrapper::after {
-		content: "sort by:";
+		content: "sort by :";
 		position: absolute;
 		top: 9px;
-		left: 10px;
+		left: 15px;
+		color: $color-gray-select;
+		font-weight: 400;
+		font-size: 12px;
+		letter-spacing: -0.01em;
+		line-height: 18px;
 	}
 	&__select {
-		padding: 10px 10px 10px 70px;
+		font-size: 12px;
+		letter-spacing: -0.01em;
+		font-weight: 600;
+		line-height: 18px;
+		padding: 10px 10px 10px 65px;
 		width: 154px;
-		position: relative;
-		// color: $color-gray-select;
+		appearance: none;
+		background-image: url("../assets/svg/chevron-down.svg");
+		background-repeat: no-repeat;
+		background-position: right 10px top 50%, 0 0;
+		background-size: 18px;
 	}
+}
+.table {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0.5px;
+	position: relative;
+	text-align: start;
+	margin-bottom: 30px;
+
+	&__header-row,
+	&__row {
+		display: flex;
+		justify-content: start;
+		padding: 0 44px 0 38px;
+	}
+
+	&__header-row {
+		color: $color-gray-text;
+		margin-bottom: 36px;
+	}
+	&__row {
+		color: $color-dark;
+		height: 69px;
+		position: relative;
+	}
+	&__row::after {
+		position: absolute;
+		content: "";
+		top: 44px;
+		left: 40px;
+		height: 1px;
+		width: calc(100% - 80px);
+		background-color: #eee;
+	}
+
+	// Расстояние между колонками разное, поэтому так
+	&__header,
+	&__cell {
+		&_1 {
+			width: 170px;
+		}
+		&_2 {
+			width: 131px;
+		}
+		&_3 {
+			width: 156px;
+		}
+		&_4 {
+			width: 207px;
+		}
+		&_5 {
+			width: 140px;
+		}
+	}
+	&__header {
+		text-align: start;
+	}
+}
+.table::before {
+	position: absolute;
+	content: "";
+	top: 36px;
+	height: 1px;
+	width: 100%;
+	background-color: #eee;
 }

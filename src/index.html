@@ -17,16 +17,20 @@
 		<div class="wrapper">
 			<div class="box">
 				<header class="header">
-					<h1 class="title">Все покупатели</h1>
+					<h1 class="title header__title">Все покупатели</h1>
 					<div class="header__controls">
 						<div class="header__search-wrapper">
 							<input class="header__search" type="text" placeholder="Поиск" />
 						</div>
 						<div class="header__select-wrapper">
 							<select class="header__select" type="text">
-								<option value="">Страна</option>
-								<option value="">sort by: <strong>Имя</strong></option>
-								<option value="">sort by: <strong>Компания</strong></option>
+								<option class="header__option" value="">Страна</option>
+								<option class="header__option" value="">
+									sort by: <strong>Имя</strong>
+								</option>
+								<option class="header__option" value="">
+									sort by: <strong>Компания</strong>
+								</option>
 							</select>
 						</div>
 					</div>
@@ -34,94 +38,107 @@
 				<main>
 					<table class="table">
 						<tr class="table__header-row">
-							<th class="table__header">Имя</th>
-							<th class="table__header">Компания</th>
-							<th class="table__header">Номер телефона</th>
-							<th class="table__header">Email</th>
-							<th class="table__header">Страна</th>
-							<th class="table__header">Статус</th>
+							<th class="table__header table__header_1">Имя</th>
+							<th class="table__header table__header_2">Компания</th>
+							<th class="table__header table__header_3">Номер телефона</th>
+							<th class="table__header table__header_4">Email</th>
+							<th class="table__header table__header_5">Страна</th>
+							<th class="table__header table__header_6">Статус</th>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6 status">Active</td>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6 status_inactive">Inactive</td>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6">Active</td>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6">Active</td>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6">Active</td>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6">Active</td>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6">Active</td>
 						</tr>
 						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
-						</tr>
-						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
-						</tr>
-						<tr class="table__row">
-							<td>Jane Cooper</td>
-							<td>Microsoft</td>
-							<td>(225) 555-0118</td>
-							<td>jane@microsoft.com</td>
-							<td>United States</td>
-							<td>Active</td>
+							<td class="table__cell table__cell_1">Jane Cooper</td>
+							<td class="table__cell table__cell_2">Microsoft</td>
+							<td class="table__cell table__cell_3">(225) 555-0118</td>
+							<td class="table__cell table__cell_4">jane@microsoft.com</td>
+							<td class="table__cell table__cell_5">United States</td>
+							<td class="table__cell table__cell_6">Active</td>
 						</tr>
 					</table>
+					<div class="pagination">
+						<span class="pagination__info"
+							>Показаны данные с Х по ХХ из ЗЗЗЗ записей</span
+						>
+						<nav class="pagintaion__nav">
+							<li class="pagination__item">
+								<a href="" class="pagination__link"></a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link"></a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link"></a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link"></a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link"></a>
+							</li>
+							...
+							<li class="pagination__item">
+								<a href="" class="pagination__link"></a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link"></a>
+							</li>
+						</nav>
+					</div>
 				</main>
 			</div>
 		</div>
