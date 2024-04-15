@@ -24,12 +24,12 @@
 						</div>
 						<div class="header__select-wrapper">
 							<select class="header__select" type="text">
-								<option class="header__option" value="">Страна</option>
-								<option class="header__option" value="">
-									sort by: <strong>Имя</strong>
+								<option class="header__option" value="firstName">Имя</option>
+								<option class="header__option" value="company">
+									<strong>Компания</strong>
 								</option>
-								<option class="header__option" value="">
-									sort by: <strong>Компания</strong>
+								<option class="header__option" value="city">
+									<strong>Город</strong>
 								</option>
 							</select>
 						</div>
@@ -37,107 +37,58 @@
 				</header>
 				<main>
 					<table class="table">
-						<tr class="table__header-row">
-							<th class="table__header table__header_1">Имя</th>
-							<th class="table__header table__header_2">Компания</th>
-							<th class="table__header table__header_3">Номер телефона</th>
-							<th class="table__header table__header_4">Email</th>
-							<th class="table__header table__header_5">Страна</th>
-							<th class="table__header table__header_6">Статус</th>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6 status">Active</td>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6 status_inactive">Inactive</td>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6">Active</td>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6">Active</td>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6">Active</td>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6">Active</td>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6">Active</td>
-						</tr>
-						<tr class="table__row">
-							<td class="table__cell table__cell_1">Jane Cooper</td>
-							<td class="table__cell table__cell_2">Microsoft</td>
-							<td class="table__cell table__cell_3">(225) 555-0118</td>
-							<td class="table__cell table__cell_4">jane@microsoft.com</td>
-							<td class="table__cell table__cell_5">United States</td>
-							<td class="table__cell table__cell_6">Active</td>
-						</tr>
+						<div class="table__spinner spinner hide"></div>
+						<thead>
+							<tr class="table__header-row">
+								<th class="table__header table__header_1">Имя</th>
+								<th class="table__header table__header_2">Компания</th>
+								<th class="table__header table__header_3">Номер телефона</th>
+								<th class="table__header table__header_4">Email</th>
+								<th class="table__header table__header_5">Город</th>
+								<th class="table__header table__header_6">Пол</th>
+							</tr>
+						</thead>
+						<tbody class="table__render"></tbody>
 					</table>
 					<div class="pagination">
 						<span class="pagination__info"
 							>Показаны данные с Х по ХХ из ЗЗЗЗ записей</span
 						>
-						<nav class="pagintaion__nav">
+						<ul class="pagination__list">
 							<li class="pagination__item">
-								<a href="" class="pagination__link"></a>
+								<a href="#" class="pagination__link pagination__prev"
+									><img src="./assets/svg/pag-chevron.svg" alt=""
+								/></a>
 							</li>
 							<li class="pagination__item">
-								<a href="" class="pagination__link"></a>
+								<a
+									href="#"
+									class="pagination__link pagination__link_active pagination__first"
+									>1</a
+								>
 							</li>
 							<li class="pagination__item">
-								<a href="" class="pagination__link"></a>
+								<a href="#" class="pagination__link pagination__second">2</a>
 							</li>
 							<li class="pagination__item">
-								<a href="" class="pagination__link"></a>
+								<a href="#" class="pagination__link pagination__third">3</a>
 							</li>
 							<li class="pagination__item">
-								<a href="" class="pagination__link"></a>
+								<a href="#" class="pagination__link pagination__fourth">4</a>
 							</li>
 							...
 							<li class="pagination__item">
-								<a href="" class="pagination__link"></a>
+								<a href="#" class="pagination__link pagination__last"></a>
 							</li>
 							<li class="pagination__item">
-								<a href="" class="pagination__link"></a>
+								<a href="#" class="pagination__link pagination__next"
+									><img
+										src="./assets/svg/pag-chevron.svg"
+										class="chevron-next"
+										alt=""
+								/></a>
 							</li>
-						</nav>
+						</ul>
 					</div>
 				</main>
 			</div>

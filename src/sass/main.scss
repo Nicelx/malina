@@ -2,6 +2,7 @@
 @import "variables";
 @import "utils";
 @import "components/status";
+@import "components/spinner";
 
 @import "pages/home.scss";
 h1 {
@@ -10,4 +11,7 @@ h1 {
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: #000;
+}
+td {
+	overflow-wrap: break-word;
 }
